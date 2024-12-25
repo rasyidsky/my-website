@@ -1,0 +1,113 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear my Sweetie</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #72a5df, #c97171);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            text-align: center;
+            background-color: white;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card h1 {
+            font-size: 2.5em;
+            color: #ff6f61;
+            margin: 0;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 10px 0 20px;
+        }
+
+        .card .heart {
+            font-size: 3em;
+            color: red;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .card button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #b7a763f6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card button:hover {
+            background-color: #b7a763f6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="1735095982542.jpg" alt="Friend's Photo">
+        <h1>serta mulia sarah 🎉</h1>
+        <p>Dear sarahh, barakallah fi umrik sehat selalu panjang umur.serta mulia semoga apa yg disemogakan tersemogakan,kalau aku pernah buat salah kamu tolong di maafin yahh,aku ucapin selamat atas prestasi kamu selama ini aku takjubb,terima kasih udah mau kenalan sama aku yg udah rela ngisi waktu malamku yg sepi, byeee ❤️</p>
+        <div class="heart">❤️</div>
+        <button onclick="playSong()">klik disini 🎶</button>
+    </div>
+
+    <audio id="birthdaySong" src="Alphaville - Forever Young ( Video Lyrics ).mp3"></audio>
+
+
+    <script>
+        function playSong() {
+            const song = document.getElementById('birthdaySong');
+            song.play();
+        }
+    </script>
+    <div class="scroll-container">
+        <div class="content"></div>
+    </div>
+</body>
+</html>

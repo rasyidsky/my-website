@@ -1,0 +1,13 @@
+.scroll-container {
+    width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+.content {
+    display: inline-block;
+    padding: 10px;
+}
+.content p {
+    display: inline;
+    margin-right: 10px;
+}
